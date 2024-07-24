@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us</title>
+  <link rel="stylesheet" href="Css/joinUs.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left">
+        <div class="content">
+            <img src="Images/Cartoon1.png" alt="GrowUp">
+            <h2>GrowUp</h2>
+            <p>Unleash Your Academic Success with <br>
+                GrowUp Excellence Platform</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="thankYouMessage" class="hidden">
+                <h2>Thank You!</h2>
+                <p>Your message has been sent.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Hide the form and show the thank you message
+      document.getElementById("contactForm").classList.add("hidden");
+      document.getElementById("thankYouMessage").classList.remove("hidden");
+  });
+</script>
+
+</body>
+
+</html>
