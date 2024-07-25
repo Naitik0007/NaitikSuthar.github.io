@@ -81,9 +81,6 @@ button.try-now:hover {
   background-color: #0056b3;
 }
 
-
-
-
 .container {
     width: 97.30%;
     background-color: #d9fef4;
@@ -122,11 +119,14 @@ padding-bottom: 70px;
 }
 
 .filter-bar {
-    display: flex;
     justify-content: space-between;
+    position: relative;
+    display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 25px;
+    padding-right: 35px;
 }
+  
 
 .filters {
     display: flex;
@@ -145,6 +145,7 @@ padding-bottom: 70px;
 
 .tracks h2 {
     margin-bottom: 10px;
+    padding-top: 27px;
 }
 
 .tracks p {
@@ -155,6 +156,7 @@ padding-bottom: 70px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 .track-card {
@@ -200,7 +202,7 @@ padding-bottom: 70px;
 
 .more-button {
   position: absolute;
-  bottom: -247px;
+  bottom: -330px;
   right: 20px;
   background-color: #007bff;
   color: #fff;
